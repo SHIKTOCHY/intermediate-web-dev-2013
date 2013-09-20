@@ -1,7 +1,119 @@
+/* CSS reset, also switch the box model */
 * {
 	margin: 0;
 	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
+html {
+	background-color: #aad9fd;
+}
+
+/* Font and centering of body */
 body {
 	font-family: Helvetica, Arial, sans-serif;
+	width: 900px;
+	margin: 0 auto;
+}
+
+header, footer {
+	padding: 10px;
+}
+
+/* Shadows */
+header, #content, footer {
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* HEADER STUFF */
+
+#logo {
+	float: left;
+}
+nav ul {
+	margin-top: 40px;
+	list-style-type: none;
+	float: right;
+}
+nav ul li {
+	display: inline;
+	margin: 20px;
+}
+nav ul li a {
+	color: #7e3402;
+	text-decoration: none;
+	font-weight: bold;
+}
+nav ul li a:hover {
+	color: #c14f02;
+	text-decoration: underline;
+}
+nav ul li a:active {
+	color: #fd954e;
+}
+header {
+	background-color: #fec7a2;
+	overflow: auto;
+}
+
+/* MIDDLE STUFF */
+
+#content {
+	background-color: white;
+	overflow: auto;
+	margin: 10px 0;
+}
+#left {
+	width: 30%;
+	float: left;
+}
+#right {
+	width: 70%;
+	float: right;
+}
+.cell ul {
+	margin-left: 25px;
+}
+.mini-profile > * {
+	float: left;
+}
+.mini-profile img {
+	padding-right: 10px;
+}
+textarea {
+	width: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+a.button {
+	background-color: #fc6c0b;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+}
+a.button:hover {
+	background-color: #fd954e;
+}
+a.button:active {
+	background-color: #9f4102;
+}
+.cell {
+	padding: 10px;
+	border: 1px solid #fd954e;
+	overflow: auto;
+	border-top: none;
+}
+
+/* FOOTER STUFF */
+
+footer {
+	clear: both;
+	background-color: #fec7a2;
+}
+footer p {
+	color: #7e3402;
 }
